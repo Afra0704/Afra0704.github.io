@@ -8,7 +8,25 @@
     <author>
       <name>Afra</name>
     </author>
-    <updated>2024-12-25T16:33:00.000Z</updated>
+    <updated>2025-01-14T12:45:00.000Z</updated>
+    <entry>
+        <id>http://example.com/2025/01/14/test/</id>
+        <title>置頂文章</title>
+        <link rel="alternate" href="http://example.com/2025/01/14/test/"/>
+        <content type="html">&lt;h2 id=&#34;加密文章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#加密文章&#34;&gt;#&lt;/a&gt; 加密文章&lt;/h2&gt;
+&lt;h3 id=&#34;密碼怎麼取得&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#密碼怎麼取得&#34;&gt;#&lt;/a&gt; 密碼怎麼取得？&lt;/h3&gt;
+&lt;details class=&#34;info&#34;&gt;&lt;summary&gt;唯一的方法&lt;/summary&gt;&lt;div&gt;
+&lt;p&gt;認識作者就行了 XD&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;div class=&#34;note warning&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;密碼請勿外傳&lt;/li&gt;
+&lt;li&gt;加密文章在輸入一次密碼之後就不用再輸入了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</content>
+        <updated>2025-01-14T12:45:00.000Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/2024/12/26/%E9%9B%A2%E6%95%A3%E6%95%B8%E5%AD%B8/%E9%9B%A2%E6%95%A3%E8%80%83%E5%8F%A4/</id>
         <title>大一上離散第二次期中考考古題解析</title>
@@ -33,25 +51,6 @@
         <category term="離散數學" scheme="http://example.com/tags/%E9%9B%A2%E6%95%A3%E6%95%B8%E5%AD%B8/" />
         <category term="考古題" scheme="http://example.com/tags/%E8%80%83%E5%8F%A4%E9%A1%8C/" />
         <category term="private" scheme="http://example.com/tags/private/" />
-        <updated>2024-12-25T16:33:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>http://example.com/2024/12/26/test/</id>
-        <title>置頂文章</title>
-        <link rel="alternate" href="http://example.com/2024/12/26/test/"/>
-        <content type="html">&lt;h2 id=&#34;加密文章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#加密文章&#34;&gt;#&lt;/a&gt; 加密文章&lt;/h2&gt;
-&lt;h3 id=&#34;密碼怎麼取得&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#密碼怎麼取得&#34;&gt;#&lt;/a&gt; 密碼怎麼取得？&lt;/h3&gt;
-&lt;p&gt;:::spoiler 唯一的方法&lt;br /&gt;
- &amp;lt;font color=&amp;quot;#77d0cc&amp;quot;&amp;gt;   認識作者就行了 XD&amp;lt;/font&amp;gt;&lt;br /&gt;
-:::&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!Note] 註&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;密碼請勿外傳&lt;/li&gt;
-&lt;li&gt;加密文章在輸入一次密碼之後就不用再輸入了&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-</content>
         <updated>2024-12-25T16:33:00.000Z</updated>
     </entry>
 </feed>
