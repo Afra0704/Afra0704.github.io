@@ -8,7 +8,122 @@
     <author>
       <name>Afra</name>
     </author>
-    <updated>2025-01-15T04:52:24.000Z</updated>
+    <updated>2025-01-15T10:24:25.576Z</updated>
+    <entry>
+        <id>http://example.com/2025/01/15/Java03/</id>
+        <title>第 03 篇、註解、變數</title>
+        <link rel="alternate" href="http://example.com/2025/01/15/Java03/"/>
+        <content type="html">&lt;h2 id=&#34;java中的註解&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#java中的註解&#34;&gt;#&lt;/a&gt; Java 中的註解&lt;/h2&gt;
+&lt;div class=&#34;tab&#34; data-id=&#34;id1&#34; data-title=&#34;單行註解&#34;&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption&gt;&lt;span&gt;comment&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//註解內容&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;tab&#34; data-id=&#34;id1&#34; data-title=&#34;多行註解&#34;&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption&gt;&lt;span&gt;comment&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/*&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;    第一行註解&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;    第二行註解&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;    ...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;java中的資料型態&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#java中的資料型態&#34;&gt;#&lt;/a&gt; Java 中的資料型態&lt;/h2&gt;
+&lt;h3 id=&#34;整數&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#整數&#34;&gt;#&lt;/a&gt; 整數&lt;/h3&gt;
+&lt;div class=&#34;tab&#34; data-id=&#34;id2&#34; data-title=&#34;byte&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;範圍：-128~127&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class=&#34;tab&#34; data-id=&#34;id2&#34; data-title=&#34;int&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;範圍：-2147483648~2147483647&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class=&#34;tab&#34; data-id=&#34;id2&#34; data-title=&#34;short&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;範圍：-32768~32767&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class=&#34;tab&#34; data-id=&#34;id2&#34; data-title=&#34;long&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;範圍：-9223372036854775808~9223372036854775807&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;點數&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#點數&#34;&gt;#&lt;/a&gt; 點數&lt;/h3&gt;
+&lt;div class=&#34;tab&#34; data-id=&#34;id3&#34; data-title=&#34;float&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;精準到小數點下 7 位數&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class=&#34;tab&#34; data-id=&#34;id3&#34; data-title=&#34;double&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;精準到小數點下 15 位數&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;布林值&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#布林值&#34;&gt;#&lt;/a&gt; 布林值&lt;/h3&gt;
+&lt;div class=&#34;tab&#34; data-id=&#34;id4&#34; data-title=&#34;boolean&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;true 和 false&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;字元&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字元&#34;&gt;#&lt;/a&gt; 字元&lt;/h3&gt;
+&lt;div class=&#34;tab&#34; data-id=&#34;id5&#34; data-title=&#34;char&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用單引號包住一個字&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;字串&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字串&#34;&gt;#&lt;/a&gt; 字串&lt;/h3&gt;
+&lt;div class=&#34;tab&#34; data-id=&#34;id6&#34; data-title=&#34;String&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;使用雙引號包住一串文字&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;變數&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#變數&#34;&gt;#&lt;/a&gt; 變數&lt;/h2&gt;
+&lt;h3 id=&#34;什麼是變數&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什麼是變數&#34;&gt;#&lt;/a&gt; 什麼是變數？&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;變數是用來儲存資料的一個名稱，可以用變數名稱來代替資料進行操作&lt;br&gt;
+使用變數前必須先宣告變數、指定資料&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;宣告變數的語法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#宣告變數的語法&#34;&gt;#&lt;/a&gt; 宣告變數的語法&lt;/h3&gt;
+&lt;div class=&#34;note default no-icon&#34;&gt;
+&lt;p&gt;資料型態 變數名稱；&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;指定資料的語法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#指定資料的語法&#34;&gt;#&lt;/a&gt; 指定資料的語法&lt;/h3&gt;
+&lt;div class=&#34;tab&#34; data-id=&#34;id7&#34; data-title=&#34;賦值&#34;&gt;
+&lt;p&gt;先宣告變數，然後指定資料 (賦值)&lt;/p&gt;
+&lt;div class=&#34;note default no-icon&#34;&gt;
+&lt;p&gt;資料型態 變數名稱；&lt;br&gt;
+ 變數名稱 = 資料；&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;例子：&lt;br&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption&gt;&lt;span&gt;example&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; x;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; x=&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;tab&#34; data-id=&#34;id7&#34; data-title=&#34;初始化&#34;&gt;
+&lt;p&gt;在宣告變數的同時指定資料&lt;/p&gt;
+&lt;div class=&#34;note default no-icon&#34;&gt;
+&lt;p&gt;資料型態 變數名稱 = 資料；&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;例子：&lt;br&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption&gt;&lt;span&gt;example&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; x=&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;使用變數&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用變數&#34;&gt;#&lt;/a&gt; 使用變數&lt;/h3&gt;
+&lt;p&gt;印出資料的語法&lt;/p&gt;
+&lt;div class=&#34;note default no-icon&#34;&gt;
+&lt;p&gt;System.out.println (任意資料);&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;範例 (以使用變數的有無為例)&lt;/p&gt;
+&lt;div class=&#34;tab&#34; data-id=&#34;id8&#34; data-title=&#34;無&#34;&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption&gt;&lt;span&gt;print_example&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;Print&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(String[] args)&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
+ 執行成果&lt;/p&gt;
+&lt;div class=&#34;note default no-icon&#34;&gt;
+&lt;p&gt;3&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;tab&#34; data-id=&#34;id8&#34; data-title=&#34;有&#34;&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption&gt;&lt;span&gt;print_example&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;Print&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(String[] args)&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; x=&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(x);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
+ 執行成果&lt;/p&gt;
+&lt;div class=&#34;note default no-icon&#34;&gt;
+&lt;p&gt;3&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+        <category term="Java" scheme="http://example.com/categories/Java/" />
+        <category term="Java" scheme="http://example.com/tags/Java/" />
+        <updated>2025-01-15T10:24:25.576Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/2025/01/15/Java/java02/</id>
         <title>第 02 篇、第一支 Java 程式</title>
