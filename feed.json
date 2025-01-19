@@ -51,14 +51,6 @@
             ]
         },
         {
-            "id": "http://example.com/2025/01/14/test/",
-            "url": "http://example.com/2025/01/14/test/",
-            "title": "置頂文章",
-            "date_published": "2025-01-14T12:45:00.000Z",
-            "content_html": "<h2 id=\"加密文章\"><a class=\"anchor\" href=\"#加密文章\">#</a> 加密文章</h2>\n<h3 id=\"密碼怎麼取得\"><a class=\"anchor\" href=\"#密碼怎麼取得\">#</a> 密碼怎麼取得？</h3>\n<details class=\"info\"><summary>唯一的方法</summary><div>\n<p>認識作者就行了 XD</p>\n</div></details>\n<div class=\"note warning\">\n<ul>\n<li>密碼請勿外傳</li>\n<li>加密文章在輸入一次密碼之後就不用再輸入了</li>\n</ul>\n</div>\n",
-            "tags": []
-        },
-        {
             "id": "http://example.com/2025/01/14/Java/Java01/",
             "url": "http://example.com/2025/01/14/Java/Java01/",
             "title": "第 01 篇、Java 簡介與安裝",
@@ -68,6 +60,14 @@
                 "Java",
                 "Java"
             ]
+        },
+        {
+            "id": "http://example.com/2025/01/14/test/",
+            "url": "http://example.com/2025/01/14/test/",
+            "title": "置頂文章",
+            "date_published": "2025-01-14T12:45:00.000Z",
+            "content_html": "<h2 id=\"加密文章\"><a class=\"anchor\" href=\"#加密文章\">#</a> 加密文章</h2>\n<h3 id=\"密碼怎麼取得\"><a class=\"anchor\" href=\"#密碼怎麼取得\">#</a> 密碼怎麼取得？</h3>\n<details class=\"info\"><summary>唯一的方法</summary><div>\n<p>認識作者就行了 XD</p>\n</div></details>\n<div class=\"note warning\">\n<ul>\n<li>密碼請勿外傳</li>\n<li>加密文章在輸入一次密碼之後就不用再輸入了</li>\n</ul>\n</div>\n",
+            "tags": []
         },
         {
             "id": "http://example.com/2024/12/26/%E9%9B%A2%E6%95%A3%E6%95%B8%E5%AD%B8/%E9%9B%A2%E6%95%A3%E8%80%83%E5%8F%A4/",
