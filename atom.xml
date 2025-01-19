@@ -8,7 +8,116 @@
     <author>
       <name>Afra</name>
     </author>
-    <updated>2025-01-16T14:39:19.000Z</updated>
+    <updated>2025-01-19T04:18:28.000Z</updated>
+    <entry>
+        <id>http://example.com/2025/01/19/java04/</id>
+        <title>第 04 篇、資料型態與轉換</title>
+        <link rel="alternate" href="http://example.com/2025/01/19/java04/"/>
+        <content type="html">&lt;h2 id=&#34;資料型態&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#資料型態&#34;&gt;#&lt;/a&gt; 資料型態&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;上一篇我們有提到變數有哪些型態，而其中又有一些小細則，在這篇會稍微談一下&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;整數型態&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#整數型態&#34;&gt;#&lt;/a&gt; 整數型態&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;整數的資料預設會是 int 型態&lt;br&gt;
+ &lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption&gt;&lt;span&gt;Datatype.java&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;long&lt;/span&gt; x=&lt;span class=&#34;number&#34;&gt;20000000000&lt;/span&gt;; &lt;span class=&#34;comment&#34;&gt;//會報錯，因為20000000000預設為int型態，他會覺得你宣告了一個超過int範圍的變數&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;note danger 報錯訊息&#34;&gt;
+&lt;p&gt;error: integer number too large&lt;/p&gt;
+&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;那我們要怎麼宣告 long 型態的整數呢？&lt;br&gt;
+ 做法是在整數後面加上大寫的 L&lt;br&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption&gt;&lt;span&gt;Datatype.java&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;long&lt;/span&gt; y=&lt;span class=&#34;number&#34;&gt;20000000000L&lt;/span&gt;; &lt;span class=&#34;comment&#34;&gt;//這時用int會報錯&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;浮點數型態&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#浮點數型態&#34;&gt;#&lt;/a&gt; 浮點數型態&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;與整數的概念類似，浮點數的資料預設是 double 型態&lt;br&gt;
+ &lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption&gt;&lt;span&gt;Datatype.java&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;float&lt;/span&gt; n=&lt;span class=&#34;number&#34;&gt;3.141592653&lt;/span&gt;; &lt;span class=&#34;comment&#34;&gt;//報錯(這邊隱含型態轉換的概念，等下會提到)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
+ 那我們要怎麼宣告 float 型態的浮點數呢？&lt;br&gt;
+ 做法是在整數後面加上大寫的 F&lt;br&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption&gt;&lt;span&gt;Datatype.java&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;float&lt;/span&gt; m=&lt;span class=&#34;number&#34;&gt;3.141592653F&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;note warning 注意&#34;&gt;
+&lt;p&gt;這邊輸出 m 會發現結果是 3.1415927，這是因為 float 為單精度浮點數，範圍只到小數點後七位&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;型態轉換&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#型態轉換&#34;&gt;#&lt;/a&gt; 型態轉換&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;接著來看看在 java 中要怎麼進行資料型態的轉換&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;資料大小&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#資料大小&#34;&gt;#&lt;/a&gt; 資料大小&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;上一篇有提到各種資料型態的大小&lt;br&gt;
+其中浮點數型態的範圍皆大於整數型態&lt;/p&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;double&amp;gt;float&amp;gt;long&amp;gt;int&amp;gt;short&amp;gt;byte&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;而這個大小在型態轉換中非常重要&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;小範圍轉換成大範圍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#小範圍轉換成大範圍&#34;&gt;#&lt;/a&gt; 小範圍轉換成大範圍&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在 java 中，小範圍轉換成大範圍的型態時會自動轉換&lt;br&gt;
+ &lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption&gt;&lt;span&gt;Datatype.java&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;byte&lt;/span&gt; n1=&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; n2=n1; &lt;span class=&#34;comment&#34;&gt;//從byte轉為int&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;long&lt;/span&gt; n3=&lt;span class=&#34;number&#34;&gt;5555&lt;/span&gt;; &lt;span class=&#34;comment&#34;&gt;//從int轉為long (因為5555預設為int型態)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;float&lt;/span&gt; n4=n3; &lt;span class=&#34;comment&#34;&gt;//從long轉換成float&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;note warning&#34;&gt;
+&lt;p&gt;第三行程式碼隱含了由 int 型態轉換成 long 型態的概念，前面提到的因為預設為 int 而報錯的例子是因為超過了 int 型態的範圍&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;大範圍轉換成小範圍&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#大範圍轉換成小範圍&#34;&gt;#&lt;/a&gt; 大範圍轉換成小範圍&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在 java 中， 大範圍轉換成小範圍的型態時會產生錯誤&lt;br&gt;
+ &lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption&gt;&lt;span&gt;Datatype.java&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; n1=&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;byte&lt;/span&gt; n2=n1; &lt;span class=&#34;comment&#34;&gt;//報錯 (從int型態轉成byte：大-&amp;gt;小)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;double&lt;/span&gt; n3=&lt;span class=&#34;number&#34;&gt;3.5&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;float&lt;/span&gt; n4=n3; &lt;span class=&#34;comment&#34;&gt;//報錯 (從double型態轉成float：大-&amp;gt;小)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;float&lt;/span&gt; n5=&lt;span class=&#34;number&#34;&gt;10.5&lt;/span&gt;; &lt;span class=&#34;comment&#34;&gt;//報錯(預設為double型態)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;note warning&#34;&gt;
+&lt;p&gt;第五行程式碼隱含了由 double 型態轉換成 float 型態的概念，因為 10.5 被預設為 double 型態，從 double 型態轉成 float，由大範圍轉換成小範圍的型態會報錯&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;大範圍轉成小範圍強制轉換&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#大範圍轉成小範圍強制轉換&#34;&gt;#&lt;/a&gt; 大範圍轉成小範圍：強制轉換&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在 java 中， 大範圍轉換成小範圍的型態可以使用&lt;span class=&#34;blue&#34;&gt; (資料型態)&lt;/span&gt; 強制轉換&lt;br&gt;
+ &lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption&gt;&lt;span&gt;Datatype.java&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; n1=&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;byte&lt;/span&gt; n2=(&lt;span class=&#34;type&#34;&gt;byte&lt;/span&gt;)n1;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; n3=&lt;span class=&#34;number&#34;&gt;1024&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;byte&lt;/span&gt; n4=(&lt;span class=&#34;type&#34;&gt;byte&lt;/span&gt;)n3; &lt;span class=&#34;comment&#34;&gt;//數字與原來不同(因超過byte範圍)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;double&lt;/span&gt; n5=&lt;span class=&#34;number&#34;&gt;3.141592653&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;float&lt;/span&gt; n6=(&lt;span class=&#34;type&#34;&gt;float&lt;/span&gt;)n5; &lt;span class=&#34;comment&#34;&gt;//數字失去精準度&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;數字與字串的轉換&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#數字與字串的轉換&#34;&gt;#&lt;/a&gt; 數字與字串的轉換&lt;/h3&gt;
+&lt;h4 id=&#34;字串轉數字&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字串轉數字&#34;&gt;#&lt;/a&gt; 字串轉數字&lt;/h4&gt;
+&lt;div class=&#34;tab&#34; data-id=&#34;id1&#34; data-title=&#34;可轉換的字串&#34;&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption&gt;&lt;span&gt;Datatype.java&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;String x=&lt;span class=&#34;string&#34;&gt;&amp;quot;345&amp;quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;tab&#34; data-id=&#34;id1&#34; data-title=&#34;不可轉換的字串&#34;&gt;
+&lt;p&gt;&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption&gt;&lt;span&gt;Datatype.java&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;String x=&lt;span class=&#34;string&#34;&gt;&amp;quot;HEllO&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;轉換方法&lt;/p&gt;
+&lt;div class=&#34;tab&#34; data-id=&#34;id2&#34; data-title=&#34;轉成int&#34;&gt;
+&lt;p&gt;語法：&lt;span class=&#34;blue&#34;&gt;Integer.parseInt (&amp;quot;字串&amp;quot;)&lt;/span&gt;&lt;br&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption&gt;&lt;span&gt;Datatype.java&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;gt;String s=&lt;span class=&#34;string&#34;&gt;&amp;quot;56&amp;quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; x=Integer.parseInt(s);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;div class=&#34;tab&#34; data-id=&#34;id2&#34; data-title=&#34;轉成long&#34;&gt;
+&lt;p&gt;語法：&lt;span class=&#34;blue&#34;&gt;Long.parseLong (&amp;quot;字串&amp;quot;)&lt;/span&gt;&lt;br&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption&gt;&lt;span&gt;Datatype.java&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; x=Long.parseLong(&lt;span class=&#34;string&#34;&gt;&amp;quot;55555&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;div class=&#34;tab&#34; data-id=&#34;id2&#34; data-title=&#34;轉成float&#34;&gt;
+&lt;p&gt;語法：&lt;span class=&#34;blue&#34;&gt;Float.parseFloat (&amp;quot;字串&amp;quot;)&lt;/span&gt;&lt;br&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption&gt;&lt;span&gt;Datatype.java&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; x=Float.parseFloat(&lt;span class=&#34;string&#34;&gt;&amp;quot;3.14&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;div class=&#34;tab&#34; data-id=&#34;id2&#34; data-title=&#34;轉成double&#34;&gt;
+&lt;p&gt;語法：&lt;span class=&#34;blue&#34;&gt;Double.parseDouble (&amp;quot;字串&amp;quot;)&lt;/span&gt;&lt;br&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption&gt;&lt;span&gt;Datatype.java&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; x=Double.parseDouble(&lt;span class=&#34;string&#34;&gt;&amp;quot;3.1415&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;數字轉字串&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#數字轉字串&#34;&gt;#&lt;/a&gt; 數字轉字串&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;通用方法：&lt;span class=&#34;blue&#34;&gt;Sting.valueOf (數字)&lt;/span&gt;&lt;br&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;figcaption&gt;&lt;span&gt;Datatype.java&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; x=&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;String s1=String.valueOf(x);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;String s2=String.valueOf(&lt;span class=&#34;number&#34;&gt;1024L&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;String s3=String.valueOf(&lt;span class=&#34;number&#34;&gt;3.14F&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;String s4=String.valueOf(&lt;span class=&#34;number&#34;&gt;3.141592653&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+        <category term="Java" scheme="http://example.com/categories/Java/" />
+        <category term="Java" scheme="http://example.com/tags/Java/" />
+        <updated>2025-01-19T04:18:28.000Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/2025/01/16/%E5%BE%AE%E7%A9%8D%E5%88%86/calculus01/</id>
         <title>第 01 篇、函數</title>
