@@ -8,7 +8,21 @@
     <author>
       <name>Afra</name>
     </author>
-    <updated>2025-01-22T10:13:24.000Z</updated>
+    <updated>2025-01-24T10:10:37.000Z</updated>
+    <entry>
+        <id>http://example.com/2025/01/24/zoj00/</id>
+        <title>ZOJ解題系列——第 00 篇</title>
+        <link rel="alternate" href="http://example.com/2025/01/24/zoj00/"/>
+        <content type="html">&lt;h2 id=&#34;zoj題庫解題系列&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#zoj題庫解題系列&#34;&gt;#&lt;/a&gt; ZOJ 題庫解題系列&lt;/h2&gt;
+&lt;h3 id=&#34;前言&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;此系列會做 ZOJ 上面的題目，念頭來自於周邊的大神朋友，詢問他我現在的程度應該做什麼才好，他推薦我這個&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9waW50aWEuY24vcHJvYmxlbS1zZXRzLzkxODI3MzY0NTAwL2V4YW0vcHJvYmxlbXMvdHlwZS83&#34;&gt;網站&lt;/span&gt;，透過解題可以去學自己不會的東西&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+        <category term="ZOJ" scheme="http://example.com/categories/ZOJ/" />
+        <category term="ZOJ" scheme="http://example.com/tags/ZOJ/" />
+        <updated>2025-01-24T10:10:37.000Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/2025/01/22/java07/</id>
         <title>第 07 篇、判斷式</title>

@@ -7,6 +7,17 @@
     "home_page_url": "http://example.com",
     "items": [
         {
+            "id": "http://example.com/2025/01/24/zoj00/",
+            "url": "http://example.com/2025/01/24/zoj00/",
+            "title": "ZOJ解題系列——第 00 篇",
+            "date_published": "2025-01-24T10:10:37.000Z",
+            "content_html": "<h2 id=\"zoj題庫解題系列\"><a class=\"anchor\" href=\"#zoj題庫解題系列\">#</a> ZOJ 題庫解題系列</h2>\n<h3 id=\"前言\"><a class=\"anchor\" href=\"#前言\">#</a> 前言</h3>\n<blockquote>\n<p>此系列會做 ZOJ 上面的題目，念頭來自於周邊的大神朋友，詢問他我現在的程度應該做什麼才好，他推薦我這個<span class=\"exturl\" data-url=\"aHR0cHM6Ly9waW50aWEuY24vcHJvYmxlbS1zZXRzLzkxODI3MzY0NTAwL2V4YW0vcHJvYmxlbXMvdHlwZS83\">網站</span>，透過解題可以去學自己不會的東西</p>\n</blockquote>\n",
+            "tags": [
+                "ZOJ",
+                "ZOJ"
+            ]
+        },
+        {
             "id": "http://example.com/2025/01/22/java07/",
             "url": "http://example.com/2025/01/22/java07/",
             "title": "第 07 篇、判斷式",
