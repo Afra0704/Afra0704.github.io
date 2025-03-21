@@ -8,7 +8,32 @@
     <author>
       <name>Afra</name>
     </author>
-    <updated>2025-01-24T18:10:28.000Z</updated>
+    <updated>2025-02-02T08:11:29.000Z</updated>
+    <entry>
+        <id>http://example.com/2025/02/02/CS02/</id>
+        <title>計算機概論第二章—— Number Systems</title>
+        <link rel="alternate" href="http://example.com/2025/02/02/CS02/"/>
+        <content type="html">&lt;div class=&#34;hbe hbe-container&#34; id=&#34;hexo-blog-encrypt&#34; data-wpm=&#34;抱歉，您輸入的密碼錯誤，請檢查後重新輸入。&#34; data-whm=&#34;OOPS, these decrypted content may changed, but you can still have a look.&#34;&gt;
+  &lt;script id=&#34;hbeData&#34; type=&#34;hbeData&#34; data-hmacdigest=&#34;a620c2cc14327ae95e1b9b29de9d538f66d7fb55451b6f51aa01a3c490b40c37&#34;&gt;10d79030e8222445804370796b90fca106f15dd47c03b7cc3ac7fb0590359f377c0304ddb781d225cbb1d86ee8029b1e939ce2fe7425d612f68db9213209e1982cf0b1e38596ff5cb239788f2081e90fe857edda6d4827c2d2fc83aa1b4c5c6f11403875816c1c7264b6a8026277f9353fb994f6201d678bce65e02d4f3109fe3a5254de972a151de5731568999aecea2ee7677b44eecfeede7a4b749749cc1967d1e42ca270e340e7cc697d97b95a6c06dfcaddf1b297d2ae1cdb190be35b98e6de370511e96839fd1aac9b501ce5f7f4f74660054c405c8634345032fcc3185bd1968db274afa600df300b26f43295197b43cb81aa0419d01ddc4c0e2c8ec4fcdeeb20f32006a16a76e88f1bf13f4cf51bdcd733d6a65e3751c6abd1778482d8c0a9e0f11c8b5592c3dbd4fc52e76811c5710777d1d0c47a0e89dd312db8461242dfa46d20a9c29bb0925e403ad4920873bf037ecd1d99a91c9f2700ce0d739a2b8a31bff0bacf56b163aa7d398946cf29311a24193d62fb7a9ec9a26ef0402bf23c40c393c7c95a4ce7034b39c6db&lt;/script&gt;
+  &lt;div class=&#34;hbe hbe-content&#34;&gt;
+    &lt;div class=&#34;hbe hbe-input hbe-input-xray&#34;&gt;
+      &lt;input class=&#34;hbe hbe-input-field hbe-input-field-xray&#34; type=&#34;password&#34; id=&#34;hbePass&#34;&gt;
+      &lt;label class=&#34;hbe hbe-input-label hbe-input-label-xray&#34; for=&#34;hbePass&#34;&gt;
+        &lt;span class=&#34;hbe hbe-input-label-content hbe-input-label-content-xray&#34;&gt;當前文章暫不對外開放，請輸入密碼後才能查閱。&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;svg class=&#34;hbe hbe-graphic hbe-graphic-xray&#34; width=&#34;300%&#34; height=&#34;100%&#34; viewBox=&#34;0 0 1200 60&#34; preserveAspectRatio=&#34;none&#34;&gt;
+        &lt;path d=&#34;M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0&#34;&gt;&lt;/path&gt;
+        &lt;path d=&#34;M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0&#34;&gt;&lt;/path&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script data-pjax src=&#34;/lib/hbe.js&#34;&gt;&lt;/script&gt;&lt;link href=&#34;/css/hbe.style.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;</content>
+        <category term="計算機概論" scheme="http://example.com/categories/%E8%A8%88%E7%AE%97%E6%A9%9F%E6%A6%82%E8%AB%96/" />
+        <category term="計算機概論" scheme="http://example.com/tags/%E8%A8%88%E7%AE%97%E6%A9%9F%E6%A6%82%E8%AB%96/" />
+        <category term="private" scheme="http://example.com/tags/private/" />
+        <updated>2025-02-02T08:11:29.000Z</updated>
+    </entry>
     <entry>
         <id>http://example.com/2025/01/25/zoj01/</id>
         <title>ZOJ解題系列——第 01 篇</title>
@@ -657,9 +682,9 @@
 &lt;/div&gt;
 &lt;script data-pjax src=&#34;/lib/hbe.js&#34;&gt;&lt;/script&gt;&lt;link href=&#34;/css/hbe.style.css&#34; rel=&#34;stylesheet&#34; type=&#34;text/css&#34;&gt;</content>
         <category term="離散數學" scheme="http://example.com/categories/%E9%9B%A2%E6%95%A3%E6%95%B8%E5%AD%B8/" />
+        <category term="private" scheme="http://example.com/tags/private/" />
         <category term="離散數學" scheme="http://example.com/tags/%E9%9B%A2%E6%95%A3%E6%95%B8%E5%AD%B8/" />
         <category term="考古題" scheme="http://example.com/tags/%E8%80%83%E5%8F%A4%E9%A1%8C/" />
-        <category term="private" scheme="http://example.com/tags/private/" />
         <updated>2025-01-14T11:45:00.000Z</updated>
     </entry>
     <entry>
